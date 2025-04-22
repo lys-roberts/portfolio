@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+p{
+    color: #674188;
+    font-size: 16px;
+}
+
+a{
+    color: #FFFBF5;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+a:hover{
+    color: #B5D5C5;
+}
+
+.webfont{
+    font-family: "Delius Swash Caps", cursive, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, .webfont2{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.primary-bg{
+    background: url(./assets/images/bg-lavendar.png) no-repeat bottom center transparent;
+    background-size: cover;
+}
+
+.secondary-bg{
+    background: #fff8ee;
+}
+
+.tertiary-bg{
+    background: #B5D5C5;
+}
+
+#menu-nav{
+    background: #674188;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav a{
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.logo p{
+    margin: 0;
+    font-weight: 700;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 50px 10px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.header-info{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.header-info::before{
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: '';
+    z-index: -1;
+    height: 100%;
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    filter: blur(10px);
+    background: rgba(250,250,250, .9);
+}
+
+.header-info h1{
+    color: #674188;
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+.header-img{
+    display: none;
+}
+
+.btn-home a h4{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#main-content{
+    padding: 50px 10px;
+    box-sizing: border-box;
+}
+
+.first-row, .second-row , .third-row{
+    text-align: center;
+}
+
+.first-row .wrapper-first-row{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-first-row > div{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.wrapper-first-row .left-info img{
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 10px 10px 0 #674188;
+}
+
+.wrapper-first-row .left-info, .wrapper-first-row .right-info{
+    text-align: center;
+}
+
+.subbox{
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.subbox a{
+    width: 300px;
+    font-weight: 700;
+    border: 1px solid #674188;
+    box-shadow: 10px 10px 0 #B5D5C5;
+}
+
+.subbox a img{
+    width: 100%;
+}
+
+.subbox a:hover{
+    transform: translate(10px,10px);
+    box-shadow: none;
+}
+
+.btn-home{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-home a{
+    margin: 0 auto;
+    margin: 5px;
+    padding: 10px;
+    color: #674188;
+    height: 50px;
+    font-weight: 700;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 5px 0 #B5D5C5;
+    border: 2px solid #674188;
+}
+
+.btn-home a:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+#footer{
+    padding: 20px;
+    text-align: center;
+    background: #674188;
+    box-sizing: border-box;
+}
+
+#footer p{
+    color: #FFFBF5;
+    margin: 0;
+}
+
+@media (min-width:768px) {
+    .subbox a{
+        width: 600px;
+    }
+}
+
+@media (min-width:1024px) {
+    p{
+        font-size: 18px;
+    }
+    
+    #header{
+        padding: 50px;
+        flex-wrap: nowrap;
+    }
+
+    .first-row .wrapper-first-row{
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .wrapper-first-row > div{
+        max-width: 40%;
+    }
+
+    .wrapper-first-row .right-info{
+        text-align: left;
+    }
+
+    .second-row .info-wrapper{
+        width: 40%;
+        margin: 0 auto 50px;
+    }
+}

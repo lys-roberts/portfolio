@@ -1,5 +1,11 @@
+html{
+    font-size: 16px;
+    font: inherit;
+}
+
 body{
     margin: 0;
+    font-size: 100%;
 }
 
 h2{
@@ -54,20 +60,31 @@ body, .webfont2{
     align-items: center;
     flex-flow: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a{
     padding: 0 10px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .logo{
     width: 30px;
     height: 30px;
     padding: 5px;
+    margin: 10px auto;
     box-sizing: border-box;
     border-radius: 50%;
     display: flex;
@@ -88,7 +105,7 @@ nav a{
     justify-content: center;
     padding: 50px 10px;
     box-sizing: border-box;
-    height: 50vh;
+    height: 500px;
 }
 
 .header-info{
@@ -116,16 +133,16 @@ nav a{
 .header-info h1{
     color: #674188;
     font-size: 3em;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
+}
+
+.header-info h3{
+    color: #674188;
+    margin: 0 0 10px;
 }
 
 .header-img{
     display: none;
-}
-
-.btn-home a h4{
-    font-size: 14px;
-    margin-left: 10px;
 }
 
 #main-content{
@@ -160,6 +177,11 @@ nav a{
     text-align: center;
 }
 
+.third-row{
+    padding: 50px 10px 0;
+    box-sizing: border-box;
+}
+
 .subbox{
     display: flex;
     gap: 20px;
@@ -170,9 +192,15 @@ nav a{
 
 .subbox a{
     width: 300px;
+    font-size: 16px;
     font-weight: 700;
+    background-color: #fff;
     border: 1px solid #674188;
     box-shadow: 10px 10px 0 #B5D5C5;
+}
+
+.subbox a p{
+    margin: 10px;
 }
 
 .subbox a img{
@@ -189,14 +217,15 @@ nav a{
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .btn-home a{
-    margin: 0 auto;
-    margin: 5px;
+    width: 300px;
     padding: 10px;
     color: #674188;
     height: 50px;
+    font-size: 1.4em;
     font-weight: 700;
     border-radius: 8px;
     background: #fff;
@@ -206,6 +235,12 @@ nav a{
     box-sizing: border-box;
     box-shadow: 0 5px 0 #B5D5C5;
     border: 2px solid #674188;
+}
+
+
+.btn-home a h4{
+    font-size: 16px;
+    margin-left: 10px;
 }
 
 .btn-home a:hover{
@@ -233,12 +268,17 @@ nav a{
 
 @media (min-width:1024px) {
 
+    .logo{
+        margin: 0;
+    }
+
     #menu-nav{
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
     }
 
     nav a{
         padding: 0 5px;
+        font-size: 20px;
     }
 
     p{
@@ -267,5 +307,20 @@ nav a{
     .second-row .info-wrapper{
         width: 40%;
         margin: 0 auto 50px;
+    }
+
+    .btn-home a{
+        width: auto;
+        font-size: 16px;
+    }
+    
+    .btn-home a h4{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:1350px) {
+    nav{
+        width: 50%;
     }
 }

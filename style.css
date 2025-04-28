@@ -3,6 +3,7 @@ body{
 }
 
 h2{
+    color: #674188;
     font-size: 2em;
     text-align: center;
 }
@@ -58,7 +59,7 @@ body, .webfont2{
 }
 
 nav a{
-    padding: 0 5px;
+    padding: 0 10px;
     box-sizing: border-box;
     font-size: 20px;
 }
@@ -87,7 +88,7 @@ nav a{
     justify-content: center;
     padding: 50px 10px;
     box-sizing: border-box;
-    height: 100vh;
+    height: 50vh;
 }
 
 .header-info{
@@ -231,9 +232,13 @@ nav a{
 }
 
 @media (min-width:1024px) {
-    
+
     #menu-nav{
         flex-flow: row wrap;
+    }
+
+    nav a{
+        padding: 0 5px;
     }
 
     p{
@@ -241,6 +246,7 @@ nav a{
     }
     
     #header{
+        height: 100vh;
         padding: 50px;
         flex-wrap: nowrap;
     }

@@ -51,15 +51,16 @@ body, .webfont2{
     background: #674188;
     display: flex;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
 nav a{
     padding: 0 5px;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 .logo{
@@ -230,6 +231,11 @@ nav a{
 }
 
 @media (min-width:1024px) {
+    
+    #menu-nav{
+        flex-flow: row wrap;
+    }
+
     p{
         font-size: 18px;
     }
